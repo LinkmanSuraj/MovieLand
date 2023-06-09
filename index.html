@@ -1,0 +1,33 @@
+{% include 'h.html' %}
+<div class="mx-2 my-4 ">
+    <div class="shadow p-3 mb-5 bg-body rounded col">
+        <form class="d-flex" method="get">
+            <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search" value="" >
+            <button class="btn btn-outline-success" type="submit" >Search</button>
+          </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        {% for a in c_data %}
+
+        <div class="col-6 col-sm-4 ">
+            <div class="card py-6  ">
+                <a href="{{a.link}}">
+                <a class="nav-link" href="https://moviesmod.pro/"><img src="/media/{{a.photo}}" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <a href="{{a.link}}"><h5 class="card-title">{{a.title}}</h5>
+                    <p class="card-text">{{a.descript}}</p></a>
+                </div>
+                
+                
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+
+{% include 'f.html' %}
+

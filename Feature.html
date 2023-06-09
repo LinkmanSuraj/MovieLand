@@ -1,0 +1,29 @@
+{% include 'h.html' %}
+<div class="mx-2 my-4 ">
+    <div class="shadow p-3 mb-5 bg-body rounded col">
+        <form class="d-flex" method="get">
+            <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        {% for a in w_data %}
+
+        <div class="col-6 col-sm-4">
+            <div class=" card mx-1 my-1 mt-4  ">
+                <a href="{{a.w_link}}" style="text-decoration: none; color: black;">
+                <img src="/media/{{a.w_photo}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{a.w_title}}</h5>
+                    <p class="card-text">{{a.w_descript}}</p></a>
+                </div>
+                
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% include 'f.html' %}
