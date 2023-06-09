@@ -12,7 +12,7 @@ def home(request):
     data={
         'c_data':c_data
     }
-    return render(request,'index.html',data)
+    return render(request,'/templates/index.html',data)
 
 def feature(request):
     
