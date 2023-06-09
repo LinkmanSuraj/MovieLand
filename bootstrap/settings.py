@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-mdphcg^jq^203huj1=-w^7as4nw^$4d+jeg2#ew&#dev_7q75o'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = [,"https://linkmansuraj.github.io/MovieLand/"]
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
