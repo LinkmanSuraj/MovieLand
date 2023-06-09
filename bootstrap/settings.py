@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-mdphcg^jq^203huj1=-w^7as4nw^$4d+jeg2#ew&#dev_7q75o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [,"https://linkmansuraj.github.io/MovieLand/"]
 
 
 # Application definition
