@@ -8,7 +8,7 @@ def home(request):
     if request.method=="GET":
         mt=request.GET.get('search')
         if mt!=None:
-             c_data=movieCards.objects.filter(title=mt)
+             c_data=movieCards.objects.filter(title__icontains=mt)
     data={
         'c_data':c_data
     }
@@ -20,7 +20,7 @@ def feature(request):
     if request.method=="GET":
         mt=request.GET.get('search')
         if mt!=None:
-            w_data=webcards.objects.filter(w_title=mt)
+            w_data=webcards.objects.filter(w_title__icontains=mt)
     data={
         'w_data':w_data
     }
@@ -32,7 +32,7 @@ def price(request):
     if request.method=="GET":
         mt=request.GET.get('search')
         if mt!=None:
-            l_data=latestCards.objects.filter(l_title=mt)
+            l_data=latestCards.objects.filter(l_title__icontains=mt)
     data={
         'l_data':l_data
     }
