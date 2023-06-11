@@ -12,7 +12,7 @@ def home(request):
     data={
         'c_data':c_data
     }
-    return render(request,'index.html',data)
+    return render(request,'/templates/index.html',data)
 
 def feature(request):
     
@@ -24,7 +24,7 @@ def feature(request):
     data={
         'w_data':w_data
     }
-    return render(request,'Feature.html',data)
+    return render(request,'/templates/Feature.html',data)
 
 def price(request):
     
@@ -37,5 +37,5 @@ def price(request):
         'l_data':l_data
     }
 
-    return render(request,'price.html',data)
+    return render(request,'/templates/price.html',data)
 
